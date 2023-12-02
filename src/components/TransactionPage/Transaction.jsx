@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import DB from './firebase,js';
+import DB from './firebase.js';
 import Button from '@mui/material/Button';
 const Transaction = () => {
   const navigate = useNavigate();
