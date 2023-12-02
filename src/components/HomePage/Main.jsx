@@ -16,7 +16,7 @@ const Main = () => {
   const navigate = useNavigate();
   const openGitRepo = () => {
     // Replace 'YOUR_GIT_REPO_URL' with the actual URL of your Git repository
-    window.open("", "_blank");
+    window.open("https://github.com/gone-keerthi/Zevi-App-", "_blank");
   };
 
   const openAssignmentPdf = () => {
