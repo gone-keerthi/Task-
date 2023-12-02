@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import DB from './firebase.js';
+// import DB from './firebase';
 import Button from '@mui/material/Button';
 const Transaction = () => {
   const navigate = useNavigate();
@@ -28,20 +28,20 @@ const Transaction = () => {
     // Clear any previous errors
     setError('');
 
-    try {
-        const docRef = await DB.collection('wallets').add({
-          walletAddress,
-          amount: parseFloat(amount)
-        });
+    // try {
+    //     const docRef = await DB.collection('wallets').add({
+    //       walletAddress,
+    //       amount: parseFloat(amount)
+    //     });
   
-        console.log('Document written with ID:', docRef.id);
+    //     console.log('Document written with ID:', docRef.id);
   
-        // You can also reset the form fields here if needed
-        setWalletAddress('');
-        setAmount('');
-      } catch (error) {
-        console.error('Error adding document:', error.message);
-      }
+    //     // You can also reset the form fields here if needed
+    //     setWalletAddress('');
+    //     setAmount('');
+    //   } catch (error) {
+    //     console.error('Error adding document:', error.message);
+    // }
 
     // Handle form submission logic here (e.g., send data to backend)
     console.log('Wallet Address:', walletAddress);
